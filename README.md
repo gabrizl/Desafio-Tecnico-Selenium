@@ -21,3 +21,34 @@ atuação em relação à metodologia Waterfall (Cascata)?
 Ainda estou aprendendo egenharia de software e devido a alguns problemas da universidade houve um atraso na disciplina e ainda não consegui estudar metodologias ageis
 ```
 </div>
+
+#Bug report
+
+CT- aceitar termos de serviço e realizar compra
+
+PRÉ REQUISITO: 
+```
+O usuário deve logar no sistema como um usuário do tipo gestor.
+```
+PASSO A PASSO:
+```
+1. Autenticação no sistema;
+2. Clique no botão "Dresses";
+3. Selecione o vestido escolhido';
+4. Adicione o vestido no carrinho;
+5. Clique em "Proceed to checkout";
+6. Clique em "Proceed to checkout";
+7. Clique em "Proceed to checkout";
+8. Aceite os termos de serviço;
+9. Clique em "Proceed to checkout";
+10. Selecionar a forma de pagamento;
+11. Clique no botão "I confirm my order" para finalizar o pedido"
+```
+RESULTADO ATUAL:
+```
+Nos testes automatizados não é possível selecionar a checkbox para aceitar os termos e prosseguir com a compra.
+```
+RESULTADO ESPERADO: 
+```
+O teste deveria marcar a checkbox e realizar a compra do vestido concluindo o teste.
+```
