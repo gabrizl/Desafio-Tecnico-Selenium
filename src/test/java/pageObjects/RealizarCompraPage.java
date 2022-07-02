@@ -80,6 +80,10 @@ public class RealizarCompraPage {
 		botaoProceedToCheckoutTermos.click();
 	}
 	
+	public void botaoProceedToCheckoutTermos() {
+		botaoProceedToCheckoutTermos.click();
+	}
+	
 	public void selecionarFormaDePagamento() {
 		selecionarFormaDePagamento.click();
 	}
@@ -100,6 +104,7 @@ public class RealizarCompraPage {
 		
 	}
 	
+
 	public void selecionarCategoriaLateral() {
 		selecionarCategoriaLateral.click();
 	}
@@ -132,7 +137,8 @@ public class RealizarCompraPage {
 		selecionarBankwire();
 	}
 	
-public void RealizarCompraComCheck() {
+	public void RealizarCompraComCheck() {
 		selecionarCheck();
 	}
+
 }

@@ -37,6 +37,8 @@ public class RealizarCompraSteps {
 		Na(RealizarCompraPage.class).botaoProceedCheckout();
 		Na(RealizarCompraPage.class).botaoProceedToCheckout();
 		Na(RealizarCompraPage.class).botaoProceedToCheckoutAddress();
+		Na(RealizarCompraPage.class).botaoProceedToCheckoutTermos();
+	
 	}
 
 	@Quando("aceitar os termos de servico")
@@ -61,22 +63,22 @@ public class RealizarCompraSteps {
 
 	@E("^Selecionar a forma de pagamento Bankwire$")
 	public void selecionarAFormaDePagamentoBankwire() throws Throwable {
-		throw new PendingException();
+		Na(RealizarCompraPage.class).RealizarCompraComBankwire();
 	}
 	
 	@E("^Selecionar a forma de pagamento Check$")
 	public void selecionarAFormaDePagamentoCheck() throws Throwable {
-		throw new PendingException();
+		Na(RealizarCompraPage.class).RealizarCompraComCheck();
 	}
 	@Entao("o sistema informa que o pedido foi realizado")
 	public void oSistemaInformaQueOPedidoFoiRealizado() {
 	    // Write code here that turns the phrase above into concrete actions
 		assertTrue(driver.findElement(By.className("dark")).getText().contains("Your order on My Store is complete."));
 	}
-
-	@Entao("^o sistema informa que È necess·rio aceitar os termos de servico$")
-	public void oSistemaInformaQue…Necess·rioAceitarOsTermosDeServico() throws Throwable {
-		assertTrue(driver.findElement(By.cssSelector("fancybox-error")).getText().contains("You must agree to the terms of service before continuing."));
+	@Entao("o sistema informa que ? necess?rio aceitar os termos de servico")
+	public void oSistemaInformaQueNecessRioAceitarOsTermosDeServico() {
+	    // Write code here that turns the phrase above into concrete actions
+		assertTrue(driver.findElement(By.xpath("//p[contains(.,'You must agree to the terms of service before continuing.')]")).isDisplayed());
 	}
 
 	
