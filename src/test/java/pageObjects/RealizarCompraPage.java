@@ -76,7 +76,7 @@ public class RealizarCompraPage {
 	}
 	
 	public void botaoAceitarTermosEContinuar() {
-		caixaAceitarTermos.click();
+		caixaAceitarTermos.submit();
 		botaoProceedToCheckoutTermos.click();
 	}
 	

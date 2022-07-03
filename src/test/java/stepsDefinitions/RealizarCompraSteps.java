@@ -37,7 +37,7 @@ public class RealizarCompraSteps {
 		Na(RealizarCompraPage.class).botaoProceedCheckout();
 		Na(RealizarCompraPage.class).botaoProceedToCheckout();
 		Na(RealizarCompraPage.class).botaoProceedToCheckoutAddress();
-		Na(RealizarCompraPage.class).botaoProceedToCheckoutTermos();
+//		Na(RealizarCompraPage.class).botaoProceedToCheckoutTermos();
 	
 	}
 
